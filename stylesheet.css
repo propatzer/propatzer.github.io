@@ -1,0 +1,133 @@
+#svg {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    color: red;
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  line {
+    transform-origin: center;
+    animation: do 10s infinite alternate;
+  }
+  line:nth-child(6n) {
+    animation-delay: -1s;
+  }
+  line:nth-child(6n + 1) {
+    animation-delay: -2s;
+  }
+  line:nth-child(6n + 2) {
+    animation-delay: -3s;
+  }
+  line:nth-child(6n + 3) {
+    animation-delay: -4s;
+  }
+  line:nth-child(6n + 4) {
+    animation-delay: -5s;
+  }
+ line:nth-child(6n + 5) {
+    animation-delay: -6s;
+  }
+  @keyframes do {
+    100% {
+      transform: scale(0.69);
+    }
+  }
+nav {
+    position: fixed;
+    z-index: 2;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    font-family: 'Lato', sans-serif;
+  }
+nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+nav li {
+    padding-left: 1rem; 
+  }
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: black;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: red;
+}
+
+a:active {
+  background: red;
+  color: white;
+}
+body{
+  background: #eee;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #eee;
+}
+.Title{
+  position: fixed;
+  z-index: 2;
+  top: 40%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+
+}
+.Tagline {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+button{
+  position: fixed;
+  top: 56%;
+  left: 46%;
+  z-index: 2;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  padding: 8px;
+  border-color:#eee;
+  background-color: transparent;
+  color: white;
+}
+

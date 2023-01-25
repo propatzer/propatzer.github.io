@@ -152,6 +152,7 @@ button{
   color: white;
   font-size: 20px;
   list-style: none;
+  height: 100vh;
 }
 .skills-container ul{
   font-family: 'Lato', sans-serif;
@@ -190,20 +191,21 @@ button{
   justify-content: center;
   align-items: center;
   height: 20vh;
-  padding: 5px 5 px 5px 5px;
   background: #0e0e0e;
   color: white;
   font-size: 20px;
 }
 
 .portfolio-container{
-  display: flow-root;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5%;
   background: #0e0e0e;
   color: white;
   font-size: 20px;
+  height: 100vh;
 }
 .portfolio-container h3{
   font-family: 'Lato', sans-serif;
@@ -223,6 +225,7 @@ button{
   padding: 5%;
   background: #0e0e0e;
   color: white;
+  height: 100vh;
 }
 .contact-container h3{
   font-family: 'Lato', sans-serif;
